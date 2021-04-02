@@ -6,12 +6,10 @@ OS_CENTOS="CentOS Linux"
 OS_UBUNTU="Ubuntu"
 
 function install_zsh_centos { 
-    sudo -i
-    yum install zsh -y
+    sudo yum install zsh -y
 }
 function install_zsh_ubuntu { 
-    sudo -i
-    apt install zsh -y
+    sudo apt install zsh -y
 }
 
 if [[ $OS_WHICH = $OS_CENTOS ]]; then
